@@ -3,6 +3,8 @@ import TableBody from "./TableBody";
 import TableHeader from "./TableHeader";
 import "./Table.css";
 import Footer from "../footer/Footer";
+import TableMobile from "./TableMobile";
+import TableHeadMobile from "./TableHeadMobile";
 
 const Table = () => {
   const [CryptoData, setCryptoData] = useState([]);
@@ -16,39 +18,69 @@ const Table = () => {
     setCryptoData(data);
   };
 
-
   useEffect(() => {
     fetchCryptoData();
   }, []);
 
   return (
-    <div className="d-sm-none d-md-block d-none d-sm-block ">
-      <table className="table table-lg table-md table-sm ">
-        <TableHeader />
-        <tbody>
+    <>
+      <div className="d-sm-none d-md-block d-none d-sm-block ">
+        <table className="table table-lg table-md table-sm ">
+          <TableHeader />
+          <tbody>
+            {CryptoData &&
+              CryptoData.slice(page * 10 - 10, page * 10).map((result) => {
+                return (
+                  <TableBody
+                    key={result.market_cap_rank}
+                    id={result.market_cap_rank}
+                    imgUrl={result.image}
+                    name={result.name}
+                    symbol={result.symbol}
+                    price={result.current_price}
+                    oneDayPriceChange={result.price_change_percentage_24h}
+                    sevenDayPriceChange={
+                      result.price_change_percentage_7d_in_currency
+                    }
+                    marketCap={result.market_cap}
+                    volume={result.total_volume}
+                    circulatingSupply={result.circulating_supply}
+                  />
+                );
+              })}
+          </tbody>
+        </table>
+      </div>
+      <div className="d-block d-sm-none .d-none .d-sm-block .d-md-none">
+        <div className="table table-sm">
+          <TableHeadMobile />
+          <tbody>
           {CryptoData &&
-            CryptoData.slice( page *10-10 ,page * 10).map((result) => {
+            CryptoData.slice(page * 10 - 10, page * 10).map((result) => {
               return (
-                <TableBody 
-                key={result.market_cap_rank}
-                id={result.market_cap_rank} 
-                imgUrl={result.image} 
-                name={result.name}
-                symbol={result.symbol}
-                price={result.current_price}
-                oneDayPriceChange={result.price_change_percentage_24h}
-                sevenDayPriceChange={result.price_change_percentage_7d_in_currency}
-                marketCap={result.market_cap}
-                volume={result.total_volume}
-                circulatingSupply = {result.circulating_supply}
+                <TableMobile
+                  key={result.market_cap_rank}
+                  id={result.market_cap_rank}
+                  imgUrl={result.image}
+                  name={result.name}
+                  symbol={result.symbol}
+                  price={result.current_price}
+                  oneDayPriceChange={result.price_change_percentage_24h}
+                  sevenDayPriceChange={
+                    result.price_change_percentage_7d_in_currency
+                  }
+                  marketCap={result.market_cap}
+                  volume={result.total_volume}
+                  circulatingSupply={result.circulating_supply}
                 />
               );
             })}
-        </tbody>
-      </table>
+</tbody>
+        </div>
+      </div>
+
       <Footer length={CryptoData.length} setPage={setPage} page={page} />
-    </div>
-    
+    </>
   );
 };
 export default Table;
