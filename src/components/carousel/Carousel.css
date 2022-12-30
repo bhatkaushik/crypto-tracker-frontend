@@ -1,6 +1,5 @@
 .Carousel {
     display: flex;
-    max-width: 100em;
     align-items: center;
     margin: 2em auto;
     justify-content: space-between;
@@ -10,8 +9,8 @@
 .carouselItem{
     flex: 1;
     display: flex;
-    width: 18em;
-    margin: 0 .5em ;
+    width: 449px;
+    margin: 0 1em ;
     height: 3em;
     box-shadow: 0px 1.47737px 17.7284px 4.43211px rgba(208, 214, 227, 0.3);
     border-radius: 12px;

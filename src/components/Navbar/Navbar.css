@@ -1,6 +1,31 @@
-.navbar{
-justify-content: flex-start;
-align-content: center;
-height:4em;
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    background-color: #ffffff;
+    margin: 0 4em;
 }
 
+.nav-item {
+    padding: 0 .5em;
+}
+
+.nav-push-right {
+    margin-left: auto;
+
+}
+
+
+@media only screen and (max-width:650px) {
+    .navbar{
+        flex-direction: row-reverse;
+       align-items: center;
+       justify-content: flex-end;
+    }
+.nav-push-right{
+    margin-right: auto;
+}
+.search{
+    display: none;
+}
+
+}
