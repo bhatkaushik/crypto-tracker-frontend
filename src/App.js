@@ -6,15 +6,15 @@ import Navbar from "./components/Navbar/Navbar";
 import Table from "./components/table/Table";
 
 function App() {
-  return <div className="App">
-<Navbar />
-<Carousel />
-<HeadingTags />
-
-<Table />
-
-<Footer />
-  </div>;
+  return (
+    <div className="App">
+      <Navbar />
+      <Carousel />
+      <HeadingTags />
+      <Table />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
