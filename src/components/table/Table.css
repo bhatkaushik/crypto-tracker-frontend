@@ -1,7 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+
+tbody {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 22.5px;
+}
+tr{
+    height: 58px;
+}
+thead {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 12px;
+    line-height: 22px;
+
+
+}
+
+.tbody__desktop_id {
+    gap: .8em;
+    flex-wrap: nowrap;
+}
+
+.tbody__desktop_name {
+    gap: .4em;
+    flex-wrap: nowrap;
+}
+
+.volspan_push_Right{
+    align-self: flex-end;
+}
 
 @media only screen and (max-width:650px) {
-.table-desktop{
-    display: none;
-}
+    .table-desktop {
+        display: none;
+    }
 }

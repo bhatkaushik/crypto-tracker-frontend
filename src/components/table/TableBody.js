@@ -17,7 +17,7 @@ const TableBody = ({
     <>
       <tr>
         <th scope="row">
-          <div className="d-flex align-items-center">
+          <div className="d-flex tbody__desktop_id align-items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -32,7 +32,7 @@ const TableBody = ({
           </div>
         </th>
         <td>
-          <div className="d-flex">
+          <div className="d-flex tbody__desktop_name ">
             <img src={imgUrl} alt={name} width="24px" height="24px" />
             <p>{name} </p>
             <span className=".text-muted">{symbol}</span>
@@ -98,16 +98,16 @@ const TableBody = ({
         <td className="font-weight-bold">${marketCap}</td>
         <td>
           <div className="d-flex flex-column">
-            <span className="font-weight-bold">${volume}</span>
-            <span className="text-muted">932,071 {symbol}</span>
+            <span className="font-weight-bold volspan_push_Right">${volume}</span>
+            <span className="text-muted volspan_push_Right">932,071 {symbol}</span>
           </div>
         </td>
 
         <td>
-          <div className="d-flex flex-column">
-            <span className="font-weight-bold">${circulatingSupply}</span>
+          <div className="d-flex flex-column align-items-end ">
+            <span className="font-weight-bold "  >${circulatingSupply}</span>
             <div
-              className="progress "
+              className="progress w-75  "
               style={{ height: "8px" }}
               role="progressbar"
               aria-label="Warning example"

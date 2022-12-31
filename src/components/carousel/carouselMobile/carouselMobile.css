@@ -1,9 +1,16 @@
-
+.carousel-mobile{
+margin: 0 auto;
+    width: 358px;
+    height: 106px;
+    display: block;
+}
 
 
 
 @media only screen and (min-width:650px) {
     .carousel-mobile{
+      
         display: none;
+
     }
 }

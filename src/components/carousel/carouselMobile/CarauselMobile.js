@@ -7,19 +7,7 @@ import './carouselMobile.css'
 const CarauselMobile = () => {
   return (
     <div className="carousel-mobile">
-<div id="carouselExampleSlidesOnly" className="carousel carousel-sm slide" data-bs-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src={carousel1} className="d-block w-100" alt="..." />
-    </div>
-    <div className="carousel-item">
-      <img src={carousel2} className="d-block w-100" alt="..." />
-    </div>
-    <div className="carousel-item">
-      <img src={carousel3} className="d-block w-100" alt="..." />
-    </div>
-  </div>
-</div>
+
 
     </div>
   )
