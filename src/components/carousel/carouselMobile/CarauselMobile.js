@@ -1,11 +1,12 @@
 import React from 'react'
-import carousel1 from "../../assets/carousel-1.png";
-import carousel2 from "../../assets/carousel-2.png";
-import carousel3 from "../../assets/carousel-3.png";
+import carousel1 from "../../../assets/carousel-1.png";
+import carousel2 from "../../../assets/carousel-2.png";
+import carousel3 from "../../../assets/carousel-3.png";
+import './carouselMobile.css'
 
 const CarauselMobile = () => {
   return (
-    <div className="d-block d-sm-none .d-none .d-sm-block .d-md-none">
+    <div className="carousel-mobile">
 <div id="carouselExampleSlidesOnly" className="carousel carousel-sm slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">

@@ -1,22 +1,48 @@
-.tag-wrapper {
-    display: flex;
-    height: 2em;
-    align-items: flex-start;
-    gap: .5em;
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+.headingTags {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.headingTags h3 {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.tag-wrapper {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    gap: .5em;
+    flex: 1;
 }
 
 .tags {
     background-color: #EFF2F5;
     border-radius: 8px;
-    line-height: 18px;
-    padding: 8px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
+    align-items: flex-start;
 
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    height: 2em;
+    padding: 1px 4px;
 }
 
-.headingTags h3 {
-    margin: .5em 0 ;
+.tags-1 {
+    display: flex;
+}
+
+
+@media only screen and (max-width:650px) {
+    .tag-wrapper {
+        display: none;
+    }
+
+    .headingTags h3 {
+        font-size: 20px;
+    }
+
 }

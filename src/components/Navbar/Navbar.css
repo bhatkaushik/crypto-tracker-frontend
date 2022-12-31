@@ -1,8 +1,8 @@
 .navbar {
     display: flex;
-    justify-content:space-between;
-    background-color: #ffffff;
-    margin: 0 4em;
+    justify-content: space-between;
+    box-shadow: 0px 1.47737px 17.7284px 4.43211px rgba(208, 214, 227, 0.3);
+    padding: 0 4em;
 }
 
 .nav-item {
@@ -11,21 +11,19 @@
 
 .nav-push-right {
     margin-left: auto;
-
 }
-
 
 @media only screen and (max-width:650px) {
-    .navbar{
+    .navbar {
         flex-direction: row-reverse;
-       align-items: center;
-       justify-content: flex-end;
+        align-items: center;
+        justify-content: flex-end;
     }
-.nav-push-right{
-    margin-right: auto;
-}
-.search{
-    display: none;
-}
+    .nav-push-right {
+        margin-right: auto;
+    }
+    .search {
+        display: none;
+    }
 
 }

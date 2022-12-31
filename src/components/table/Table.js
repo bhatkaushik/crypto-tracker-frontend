@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import TableBody from "./TableBody";
 import TableHeader from "./TableHeader";
 import "./Table.css";
+import './TableMobile.css'
 import Footer from "../footer/Footer";
 import TableMobile from "./TableMobile";
 import TableHeadMobile from "./TableHeadMobile";
@@ -24,7 +25,7 @@ const Table = () => {
 
   return (
     <>
-      <div className="d-sm-none d-md-block d-none d-sm-block ">
+      <div className="table-desktop">
         <table className="table table-lg table-md table-sm ">
           <TableHeader />
           <tbody>
@@ -51,7 +52,7 @@ const Table = () => {
           </tbody>
         </table>
       </div>
-      <div className="d-block d-sm-none .d-none .d-sm-block .d-md-none">
+      <div className="table-mobile">
         <div className="table table-sm">
           <TableHeadMobile />
           <tbody>

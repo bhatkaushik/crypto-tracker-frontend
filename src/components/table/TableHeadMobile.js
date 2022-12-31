@@ -26,11 +26,6 @@ const TableHeadMobile = () => {
               </svg>
             </div>
           </th>
-          {/* <th scope="col">7D</th>
-          <th scope="col">MARKRT CAP</th>
-          <th scope="col">VOLUME(24H)</th>
-          <th scope="col">CIRCULATING SUPPLY</th>
-          <th scope="col"></th> */}
         </tr>
       </thead>
     </>

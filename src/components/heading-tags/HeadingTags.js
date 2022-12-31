@@ -2,10 +2,10 @@ import React from "react";
 import "./headingTags.css";
 const HeadingTags = () => {
   return (
-    <div className="headingTags d-flex flex-column">
+    <div className="headingTags">
       <h3>Top 100 Cryptocurrencies by Market Cap</h3>
       <div className="tag-wrapper">
-        <div className="tags d-flex">
+        <div className="tags tags-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width={16}
@@ -19,7 +19,7 @@ const HeadingTags = () => {
 
           <p> Favourites</p>
         </div>
-        <div className="tags">
+        <div className="tags text-primary">
           <p>CryptoCurrencies</p>
         </div>
         <div className="tags">

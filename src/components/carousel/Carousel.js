@@ -6,7 +6,6 @@ import carousel3 from "../../assets/carousel-3.png";
 
 const Carousel = () => {
   return (
-    <div className="d-sm-none d-md-block d-none d-sm-block">
       <div className="Carousel ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,16 +20,16 @@ const Carousel = () => {
 
         <div className="carouselItem carouselItem1">
           <img src={carousel1} alt="carousel-img" className="carousel-img" />
-          <div className="carousel-content-wrapper">
-            <p className="color-secandary">Take a quiz!</p>
-            <p className="font-weight-bold h5">Learn and earn $CKB</p>
+          <div className="carousel-content-wrapper ">
+            <p className="text-secondary carousel__p1">Take a quiz!</p>
+            <p className="carousel__p2">Learn and earn $CKB</p>
           </div>
         </div>
         <div className="carouselItem carouselItem2">
           <img src={carousel2} alt="carousel-img" className="carousel-img" />
           <div className="carousel-content-wrapper">
-            <p className="color-secandary">Portfolio 🔥</p>
-            <p className="font-weight-bold h5">
+            <p className="text-secondary carousel__p1">Portfolio 🔥</p>
+            <p className="carousel__p2">
               Track your trades in one place, not all over the place
             </p>
           </div>
@@ -38,9 +37,11 @@ const Carousel = () => {
         <div className="carouselItem carouselItem3">
           <img src={carousel3} alt="carousel-img" className="carousel-img" />
           <div className="carousel-content-wrapper">
-            <p className="color-secandary">Portfolio</p>
-            Track your trades in one place, not all over the place
-            <p className="font-weight-bold h5"></p>
+            <p className="text-secondary carousel__p1">Portfolio</p>
+
+            <p className="carousel__p2">
+              Track your trades in one place, not all over the place
+            </p>
           </div>
         </div>
         <svg
@@ -54,7 +55,7 @@ const Carousel = () => {
           <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
         </svg>
       </div>
-    </div>
+    
   );
 };
 

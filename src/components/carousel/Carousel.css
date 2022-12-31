@@ -1,19 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 .Carousel {
     display: flex;
     align-items: center;
-    margin: 2em auto;
+    margin: 1em auto;
     justify-content: space-between;
-    background: linear-gradient(180deg, #F8FAFC 0%, rgba(248, 250, 252, 0) 170.94%);
+    gap: 1em;
+
+
 }
 
 .carouselItem{
     flex: 1;
+    font-family: 'Inter', sans-serif;
     display: flex;
-    width: 449px;
-    margin: 0 1em ;
-    height: 3em;
+    max-width: 449px;
+    height: 120px;
     box-shadow: 0px 1.47737px 17.7284px 4.43211px rgba(208, 214, 227, 0.3);
     border-radius: 12px;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
+    gap: .3em;
+    overflow: hidden;
     }
+.carouselItem img{
+    border-radius: 25px;
+}    
+
+.carousel__p1{
+    font-size:.9em;
+    padding: 0;
+}
+
+.carousel__p2{
+font-size: 0.9em;
+font-family: 'Inter', sans-serif;
+padding: 0;
+}
+
+.carousel-content-wrapper{
+    display: flex;
+    flex-direction: column;
+height: 100%;
+align-items:flex-start;
+justify-content:flex-start;
+margin-top: 1.2em;
+}
+
+
+
+@media only screen and (max-width:650px) {
+    .Carousel{
+        display: none;
+    }
+}
