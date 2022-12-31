@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import TableBody from "./TableBody";
 import TableHeader from "./TableHeader";
 import "./Table.css";
-import './TableMobile.css'
+import './tablemobile/TableMobile.css'
 import Footer from "../footer/Footer";
-import TableMobile from "./TableMobile";
-import TableHeadMobile from "./TableHeadMobile";
+import TableMobile from "./tablemobile/TableMobile";
+import TableHeadMobile from "./tablemobile/TableHeadMobile";
 
 const Table = () => {
   const [CryptoData, setCryptoData] = useState([]);
