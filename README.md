@@ -1,3 +1,7 @@
+As per the all the design and features have been implemented except the Model in mobile respensiveness
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
