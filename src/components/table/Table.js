@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import TableBody from "./TableBody";
 import TableHeader from "./TableHeader";
 import "./Table.css";
-import './tablemobile/TableMobile.css'
+import "./tablemobile/TableMobile.css";
 import Footer from "../footer/Footer";
 import TableMobile from "./tablemobile/TableMobile";
 import TableHeadMobile from "./tablemobile/TableHeadMobile";
@@ -53,31 +53,31 @@ const Table = () => {
         </table>
       </div>
       <div className="table-mobile">
-        <div className="table table-sm">
+        <table className="table table-sm">
           <TableHeadMobile />
           <tbody>
-          {CryptoData &&
-            CryptoData.slice(page * 10 - 10, page * 10).map((result) => {
-              return (
-                <TableMobile
-                  key={result.market_cap_rank}
-                  id={result.market_cap_rank}
-                  imgUrl={result.image}
-                  name={result.name}
-                  symbol={result.symbol}
-                  price={result.current_price}
-                  oneDayPriceChange={result.price_change_percentage_24h}
-                  sevenDayPriceChange={
-                    result.price_change_percentage_7d_in_currency
-                  }
-                  marketCap={result.market_cap}
-                  volume={result.total_volume}
-                  circulatingSupply={result.circulating_supply}
-                />
-              );
-            })}
-</tbody>
-        </div>
+            {CryptoData &&
+              CryptoData.slice(page * 10 - 10, page * 10).map((result) => {
+                return (
+                  <TableMobile
+                    key={result.market_cap_rank}
+                    id={result.market_cap_rank}
+                    imgUrl={result.image}
+                    name={result.name}
+                    symbol={result.symbol}
+                    price={result.current_price}
+                    oneDayPriceChange={result.price_change_percentage_24h}
+                    sevenDayPriceChange={
+                      result.price_change_percentage_7d_in_currency
+                    }
+                    marketCap={result.market_cap}
+                    volume={result.total_volume}
+                    circulatingSupply={result.circulating_supply}
+                  />
+                );
+              })}
+          </tbody>
+        </table>
       </div>
 
       <Footer length={CryptoData.length} setPage={setPage} page={page} />

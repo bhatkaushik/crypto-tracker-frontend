@@ -41,4 +41,9 @@ thead {
     thead {
         height: 10px;
     }
+    tbody {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
