@@ -30,7 +30,7 @@ const TableMobile = ({
         </th>
 
         <td>
-          <div className="d-flex">
+          <div className="d-flex gap-1 ">
             <img src={imgUrl} alt={name} width="24px" height="24px" />
             <p>{name} </p>
             <span className=".text-muted">{symbol}</span>

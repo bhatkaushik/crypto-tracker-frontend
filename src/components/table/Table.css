@@ -37,4 +37,8 @@ thead {
     .table-desktop {
         display: none;
     }
+
+    thead {
+        height: 10px;
+    }
 }

@@ -27,3 +27,10 @@
     }
 
 }
+
+@media only screen and (max-width:500px){
+.navbar{
+    padding: 0 2em;
+}
+    
+} 
