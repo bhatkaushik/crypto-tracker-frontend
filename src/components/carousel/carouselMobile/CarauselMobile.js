@@ -17,13 +17,12 @@ const CarauselMobile = () => {
         </div>
       </div>
       <div className="carousel__mobile__navigation">
-     <div className="radio-wrapper">
-      <input className="radio__flex__mobile" type="radio" name="" id="" />
-      <input className="radio__flex__mobile" type="radio" name="" id="" checked/>
-      <input className="radio__flex__mobile" type="radio" name="" id="" />
-      <input className="radio__flex__mobile" type="radio" name="" id="" />
-
-     </div>
+        <div className="radio-wrapper">
+          <input className="radio__flex__mobile" type="radio" />
+          <input className="radio__flex__mobile" type="radio" />
+          <input className="radio__flex__mobile" type="radio" />
+          <input className="radio__flex__mobile" type="radio" />
+        </div>
       </div>
     </div>
   );
