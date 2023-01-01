@@ -2,15 +2,18 @@ import React, { useEffect, useState } from "react";
 import TableBody from "./TableBody";
 import TableHeader from "./TableHeader";
 import "./Table.css";
-import "./tablemobile/TableMobile.css";
-import Footer from "../footer/Footer";
-import TableMobile from "./tablemobile/TableMobile";
-import TableHeadMobile from "./tablemobile/TableHeadMobile";
+import "../tablemobile/TableMobile.css";
+import Footer from "../../footer/Footer";
+import TableMobile from "../tablemobile/TableMobile";
+import TableHeadMobile from "../tablemobile/TableHeadMobile";
 
 const Table = () => {
   const [CryptoData, setCryptoData] = useState([]);
+
+  // state management for pagination
   const [page, setPage] = useState(1);
 
+  // fetching data from the given Api
   const fetchCryptoData = async () => {
     const res = await fetch(
       "https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&amp;order=market_cap_desc&amp;per_page=100&amp;page=1&amp;sparkline=false&amp;price_change_percentage=24h%2C7d"
@@ -19,6 +22,7 @@ const Table = () => {
     setCryptoData(data);
   };
 
+  // fetching data on loading of the page
   useEffect(() => {
     fetchCryptoData();
   }, []);

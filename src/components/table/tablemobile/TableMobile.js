@@ -1,17 +1,16 @@
-import React from 'react'
-import TableHeadMobile from './TableHeadMobile'
-import './TableMobile.css'
+import "./TableMobile.css";
+
 const TableMobile = ({
-    id,
-    imgUrl,
-    name,
-    symbol,
-    price,
-    oneDayPriceChange,
-    sevenDayPriceChange,
-    marketCap,
-    volume,
-    circulatingSupply,
+  id,
+  imgUrl,
+  name,
+  symbol,
+  price,
+  oneDayPriceChange,
+  sevenDayPriceChange,
+  marketCap,
+  volume,
+  circulatingSupply,
 }) => {
   return (
     <>
@@ -67,6 +66,7 @@ const TableMobile = ({
             {Math.abs(oneDayPriceChange).toFixed(2)}%
           </div>
         </td>
+
         {/* <td className={sevenDayPriceChange >= 0 ? "text-success" : "text-danger"}>
           <div className="d-flex align-items-center">
           {sevenDayPriceChange >= 0 ? (
@@ -138,12 +138,12 @@ const TableMobile = ({
       </tr>
     </>
   );
-}
+};
 
-export default TableMobile
+export default TableMobile;
 
-    // <th scope="col">7D</th>
-    //       <th scope="col">MARKRT CAP</th>
-    //       <th scope="col">VOLUME(24H)</th>
-    //       <th scope="col">CIRCULATING SUPPLY</th>
-    //       <th scope="col"></th> 
+// <th scope="col">7D</th>
+//       <th scope="col">MARKRT CAP</th>
+//       <th scope="col">VOLUME(24H)</th>
+//       <th scope="col">CIRCULATING SUPPLY</th>
+//       <th scope="col"></th>
